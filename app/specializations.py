@@ -1,6 +1,6 @@
 from .exceptions import SpecializationNotFoundError
 from .models import Specialization
-from .storage import get_next_id, load_data, save_data
+from .storage import get_next_id, load_objects, save_objects
 
 
 SPECIALIZATIONS_FILE = "specializations.json"
@@ -12,7 +12,7 @@ def add_specialization(
 ) -> Specialization:
     """Добавить новую специализацию."""
 
-    specializations = load_data(SPECIALIZATIONS_FILE)
+    specializations = load_objects(SPECIALIZATIONS_FILE, Specialization)
 
     specialization = Specialization(
         id=get_next_id(specializations),
@@ -20,8 +20,8 @@ def add_specialization(
         description=description.strip(),
     )
 
-    specializations.append(specialization.to_dict())
-    save_data(SPECIALIZATIONS_FILE, specializations)
+    specializations.append(specialization)
+    save_objects(SPECIALIZATIONS_FILE, specializations)
 
     return specialization
 
@@ -29,11 +29,11 @@ def add_specialization(
 def get_specialization(specialization_id: int) -> Specialization:
     """Получить специализацию по ID."""
 
-    specializations = load_data(SPECIALIZATIONS_FILE)
+    specializations = load_objects(SPECIALIZATIONS_FILE, Specialization)
 
     for item in specializations:
-        if item["id"] == specialization_id:
-            return Specialization(**item)
+        if item.id == specialization_id:
+            return item
 
     raise SpecializationNotFoundError(
         f"Специализация с ID {specialization_id} не найдена."
@@ -43,7 +43,4 @@ def get_specialization(specialization_id: int) -> Specialization:
 def get_all_specializations() -> list[Specialization]:
     """Получить все специализации."""
 
-    return [
-        Specialization(**item)
-        for item in load_data(SPECIALIZATIONS_FILE)
-    ]
+    return load_objects(SPECIALIZATIONS_FILE, Specialization)

@@ -4,7 +4,7 @@ from .exceptions import (
     UserNotFoundError,
 )
 from .models import User
-from .storage import get_next_id, load_data, save_data
+from .storage import get_next_id, load_objects, save_objects
 
 
 USERS_FILE = "users.json"
@@ -24,9 +24,9 @@ def register_user(name: str, email: str, password: str) -> User:
             "Пароль должен содержать минимум 4 символа."
         )
 
-    users = load_data(USERS_FILE)
+    users = load_objects(USERS_FILE, User)
 
-    if any(user["email"] == email for user in users):
+    if any(user.email == email.strip() for user in users):
         raise UserAlreadyExistsError(
             "Пользователь с таким email уже существует."
         )
@@ -38,8 +38,8 @@ def register_user(name: str, email: str, password: str) -> User:
         password=password,
     )
 
-    users.append(user.to_dict())
-    save_data(USERS_FILE, users)
+    users.append(user)
+    save_objects(USERS_FILE, users)
 
     return user
 
@@ -47,11 +47,11 @@ def register_user(name: str, email: str, password: str) -> User:
 def get_user(user_id: int) -> User:
     """Получить пользователя по ID."""
 
-    users = load_data(USERS_FILE)
+    users = load_objects(USERS_FILE, User)
 
     for user in users:
-        if user["id"] == user_id:
-            return User(**user)
+        if user.id == user_id:
+            return user
 
     raise UserNotFoundError(f"Пользователь с ID {user_id} не найден.")
 
@@ -59,10 +59,10 @@ def get_user(user_id: int) -> User:
 def authenticate_user(email: str, password: str) -> User:
     """Авторизация пользователя."""
 
-    users = load_data(USERS_FILE)
+    users = load_objects(USERS_FILE, User)
 
     for user in users:
-        if user["email"] == email and user["password"] == password:
-            return User(**user)
+        if user.email == email and user.check_password(password):
+            return user
 
     raise UserNotFoundError("Неверный email или пароль.")

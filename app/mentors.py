@@ -1,6 +1,6 @@
 from .exceptions import MentorNotFoundError
 from .models import Mentor
-from .storage import get_next_id, load_data, save_data
+from .storage import get_next_id, load_objects, save_objects
 
 
 MENTORS_FILE = "mentors.json"
@@ -13,7 +13,7 @@ def register_mentor(
 ) -> Mentor:
     """Зарегистрировать наставника."""
 
-    mentors = load_data(MENTORS_FILE)
+    mentors = load_objects(MENTORS_FILE, Mentor)
 
     mentor = Mentor(
         id=get_next_id(mentors),
@@ -22,8 +22,8 @@ def register_mentor(
         specializations=specializations,
     )
 
-    mentors.append(mentor.to_dict())
-    save_data(MENTORS_FILE, mentors)
+    mentors.append(mentor)
+    save_objects(MENTORS_FILE, mentors)
 
     return mentor
 
@@ -31,11 +31,11 @@ def register_mentor(
 def get_mentor(mentor_id: int) -> Mentor:
     """Получить наставника по ID."""
 
-    mentors = load_data(MENTORS_FILE)
+    mentors = load_objects(MENTORS_FILE, Mentor)
 
     for mentor in mentors:
-        if mentor["id"] == mentor_id:
-            return Mentor(**mentor)
+        if mentor.id == mentor_id:
+            return mentor
 
     raise MentorNotFoundError(
         f"Наставник с ID {mentor_id} не найден."
@@ -47,10 +47,10 @@ def get_mentors_by_specialization(
 ) -> list[Mentor]:
     """Найти наставников по специализации."""
 
-    mentors = load_data(MENTORS_FILE)
+    mentors = load_objects(MENTORS_FILE, Mentor)
 
     return [
-        Mentor(**mentor)
+        mentor
         for mentor in mentors
-        if specialization_id in mentor["specializations"]
+        if mentor.can_mentor(specialization_id)
     ]
