@@ -2,23 +2,17 @@
     {
         "id": 1,
         "name": "Иван",
-        "email": "ivan@example.com",
+        "email": "duplicate@test.ru",
         "password": "1234"
     },
     {
         "id": 2,
         "name": "Иван",
-        "email": "duplicate@test.ru",
-        "password": "1234"
-    },
-    {
-        "id": 3,
-        "name": "Иван",
         "email": "ivan@test.ru",
         "password": "1234"
     },
     {
-        "id": 4,
+        "id": 3,
         "name": "Иван",
         "email": "auth@test.ru",
         "password": "1234"

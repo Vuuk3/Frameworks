@@ -1,10 +1,2 @@
 [
-    {
-        "id": 1,
-        "name": "Анна",
-        "email": "anna@example.com",
-        "specializations": [
-            1
-        ]
-    }
 ]
