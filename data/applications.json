@@ -12,5 +12,19 @@
         "specialization_id": 10,
         "status": "open",
         "mentor_id": null
+    },
+    {
+        "id": 3,
+        "user_id": 4,
+        "specialization_id": 1,
+        "status": "accepted",
+        "mentor_id": 1
+    },
+    {
+        "id": 4,
+        "user_id": 1,
+        "specialization_id": 2,
+        "status": "accepted",
+        "mentor_id": 2
     }
 ]

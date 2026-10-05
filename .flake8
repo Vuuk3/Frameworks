@@ -1,0 +1,9 @@
+[flake8]
+extend-exclude =
+    venv,
+    outputs,
+    scan_results,
+    tmp,
+    aspect_scan.py,
+    make_examples.py
+max-line-length = 79

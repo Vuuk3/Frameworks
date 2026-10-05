@@ -1,0 +1,1 @@
+"""Application pages Django application."""

@@ -1,0 +1,1 @@
+"""Specialization pages Django application."""

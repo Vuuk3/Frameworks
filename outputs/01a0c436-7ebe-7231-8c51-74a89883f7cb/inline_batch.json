@@ -1,0 +1,7 @@
+[
+  {"file":"2026-09-20_00.19.57.png","ingredient":"Лепесток пульсирующего цветка","focus":"-","form":"-","safety":"-","aspect":"Corpus","effects":[{"effect":"Замедление","value":8}]},
+  {"file":"2026-09-20_00.19.44.png","ingredient":"Гамбазон","focus":"-","form":"-","safety":"-","aspect":"Tenebrae","effects":[{"effect":"Везение","value":14},{"effect":"Свечение","value":11},{"effect":"Замедление","value":10}]},
+  {"file":"2026-09-20_00.19.46.png","ingredient":"Грузовая вагонетка","focus":"-","form":"-","safety":"-","aspect":"Corpus","effects":[{"effect":"Замедление","value":10},{"effect":"Сопротивление","value":10}]},
+  {"file":"2026-09-20_00.19.47.png","ingredient":"Жар-кои","focus":"Небольшая длительность","form":"газообразный","safety":"неизвестно","aspect":"Tenebrae","effects":[{"effect":"Невезение","value":16},{"effect":"Прилив здоровья","value":14},{"effect":"Замедление","value":12}]},
+  {"file":"2026-09-20_00.19.48.png","ingredient":"Жёлтый окунь","focus":"Небольшая сила","form":"-","safety":"-","aspect":"Corpus","effects":[{"effect":"Левитация","value":13},{"effect":"Замедление","value":13},{"effect":"Исцеление","value":10}]}
+]

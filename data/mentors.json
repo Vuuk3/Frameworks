@@ -1,2 +1,18 @@
 [
+    {
+        "id": 1,
+        "name": "Анна",
+        "email": "anna@example.com",
+        "specializations": [
+            1
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Анна",
+        "email": "anna@example.com",
+        "specializations": [
+            2
+        ]
+    }
 ]

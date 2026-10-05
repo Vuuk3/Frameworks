@@ -1,2 +1,12 @@
 [
+    {
+        "id": 1,
+        "name": "Python",
+        "description": "Программирование на Python"
+    },
+    {
+        "id": 2,
+        "name": "Python",
+        "description": "Программирование на Python"
+    }
 ]

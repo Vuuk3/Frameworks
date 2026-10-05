@@ -1,0 +1,904 @@
+[
+  {
+    "id": 0,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.17.54.png",
+    "box": [
+      1188,
+      429,
+      1706,
+      537
+    ]
+  },
+  {
+    "id": 1,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.17.54.png",
+    "box": [
+      1188,
+      429,
+      1706,
+      537
+    ]
+  },
+  {
+    "id": 2,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.17.58.png",
+    "box": [
+      1188,
+      486,
+      1547,
+      594
+    ]
+  },
+  {
+    "id": 3,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.17.58.png",
+    "box": [
+      1188,
+      486,
+      1547,
+      594
+    ]
+  },
+  {
+    "id": 4,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.17.59.png",
+    "box": [
+      1305,
+      486,
+      1664,
+      594
+    ]
+  },
+  {
+    "id": 5,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.17.59.png",
+    "box": [
+      1305,
+      486,
+      1664,
+      594
+    ]
+  },
+  {
+    "id": 6,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.00.png",
+    "box": [
+      1224,
+      483,
+      1697,
+      591
+    ]
+  },
+  {
+    "id": 7,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.00.png",
+    "box": [
+      1224,
+      483,
+      1697,
+      591
+    ]
+  },
+  {
+    "id": 8,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.01.png",
+    "box": [
+      1206,
+      486,
+      1595,
+      594
+    ]
+  },
+  {
+    "id": 9,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.01.png",
+    "box": [
+      1206,
+      486,
+      1595,
+      594
+    ]
+  },
+  {
+    "id": 10,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.04.png",
+    "box": [
+      1299,
+      540,
+      1658,
+      648
+    ]
+  },
+  {
+    "id": 11,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.04.png",
+    "box": [
+      1299,
+      540,
+      1658,
+      648
+    ]
+  },
+  {
+    "id": 12,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.05.png",
+    "box": [
+      1164,
+      540,
+      1604,
+      648
+    ]
+  },
+  {
+    "id": 13,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.05.png",
+    "box": [
+      1164,
+      540,
+      1604,
+      648
+    ]
+  },
+  {
+    "id": 14,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.06.png",
+    "box": [
+      1176,
+      540,
+      1562,
+      648
+    ]
+  },
+  {
+    "id": 15,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.06.png",
+    "box": [
+      1176,
+      540,
+      1562,
+      648
+    ]
+  },
+  {
+    "id": 16,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.13.png",
+    "box": [
+      1188,
+      624,
+      1706,
+      732
+    ]
+  },
+  {
+    "id": 17,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.14.png",
+    "box": [
+      1176,
+      630,
+      1652,
+      738
+    ]
+  },
+  {
+    "id": 18,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.14.png",
+    "box": [
+      1176,
+      630,
+      1652,
+      738
+    ]
+  },
+  {
+    "id": 19,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.18.png",
+    "box": [
+      1095,
+      693,
+      1604,
+      801
+    ]
+  },
+  {
+    "id": 20,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.18.png",
+    "box": [
+      1095,
+      693,
+      1604,
+      801
+    ]
+  },
+  {
+    "id": 21,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.19.png",
+    "box": [
+      1293,
+      693,
+      1661,
+      801
+    ]
+  },
+  {
+    "id": 22,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.20.png",
+    "box": [
+      1341,
+      693,
+      1700,
+      801
+    ]
+  },
+  {
+    "id": 23,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.28.png",
+    "box": [
+      1005,
+      537,
+      1514,
+      645
+    ]
+  },
+  {
+    "id": 24,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.52.png",
+    "box": [
+      1173,
+      411,
+      1619,
+      519
+    ]
+  },
+  {
+    "id": 25,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.52.png",
+    "box": [
+      1173,
+      411,
+      1619,
+      519
+    ]
+  },
+  {
+    "id": 26,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.53.png",
+    "box": [
+      1140,
+      408,
+      1649,
+      516
+    ]
+  },
+  {
+    "id": 27,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.54.png",
+    "box": [
+      1281,
+      414,
+      1709,
+      522
+    ]
+  },
+  {
+    "id": 28,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.57.png",
+    "box": [
+      1257,
+      468,
+      1703,
+      576
+    ]
+  },
+  {
+    "id": 29,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.18.57.png",
+    "box": [
+      1257,
+      468,
+      1703,
+      576
+    ]
+  },
+  {
+    "id": 30,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.19.01.png",
+    "box": [
+      1110,
+      543,
+      1556,
+      651
+    ]
+  },
+  {
+    "id": 31,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.19.03.png",
+    "box": [
+      1206,
+      516,
+      1652,
+      624
+    ]
+  },
+  {
+    "id": 32,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.19.03.png",
+    "box": [
+      1206,
+      516,
+      1652,
+      624
+    ]
+  },
+  {
+    "id": 33,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.19.09.png",
+    "box": [
+      1212,
+      585,
+      1658,
+      693
+    ]
+  },
+  {
+    "id": 34,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.19.21.png",
+    "box": [
+      1212,
+      519,
+      1598,
+      627
+    ]
+  },
+  {
+    "id": 35,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.19.23.png",
+    "box": [
+      1305,
+      492,
+      1664,
+      600
+    ]
+  },
+  {
+    "id": 36,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.19.23.png",
+    "box": [
+      1305,
+      492,
+      1664,
+      600
+    ]
+  },
+  {
+    "id": 37,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.19.24.png",
+    "box": [
+      1248,
+      489,
+      1607,
+      597
+    ]
+  },
+  {
+    "id": 38,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.19.47.png",
+    "box": [
+      1278,
+      435,
+      1751,
+      543
+    ]
+  },
+  {
+    "id": 39,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.19.47.png",
+    "box": [
+      1278,
+      435,
+      1751,
+      543
+    ]
+  },
+  {
+    "id": 40,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.19.48_2.png",
+    "box": [
+      1110,
+      477,
+      1499,
+      585
+    ]
+  },
+  {
+    "id": 41,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.19.48_2.png",
+    "box": [
+      1110,
+      477,
+      1499,
+      585
+    ]
+  },
+  {
+    "id": 42,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.19.49.png",
+    "box": [
+      1221,
+      480,
+      1655,
+      588
+    ]
+  },
+  {
+    "id": 43,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.19.52.png",
+    "box": [
+      1119,
+      522,
+      1553,
+      630
+    ]
+  },
+  {
+    "id": 44,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.20.04_2.png",
+    "box": [
+      1194,
+      726,
+      1583,
+      834
+    ]
+  },
+  {
+    "id": 45,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.20.04_2.png",
+    "box": [
+      1194,
+      726,
+      1583,
+      834
+    ]
+  },
+  {
+    "id": 46,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.20.07.png",
+    "box": [
+      1155,
+      735,
+      1544,
+      843
+    ]
+  },
+  {
+    "id": 47,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.20.07.png",
+    "box": [
+      1155,
+      735,
+      1544,
+      843
+    ]
+  },
+  {
+    "id": 48,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.20.11_2.png",
+    "box": [
+      1344,
+      774,
+      1766,
+      882
+    ]
+  },
+  {
+    "id": 49,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.20.12.png",
+    "box": [
+      1134,
+      786,
+      1523,
+      894
+    ]
+  },
+  {
+    "id": 50,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.20.23.png",
+    "box": [
+      1176,
+      453,
+      1544,
+      561
+    ]
+  },
+  {
+    "id": 51,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.20.31_2.png",
+    "box": [
+      1143,
+      552,
+      1652,
+      660
+    ]
+  },
+  {
+    "id": 52,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.20.48.png",
+    "box": [
+      1143,
+      792,
+      1616,
+      900
+    ]
+  },
+  {
+    "id": 53,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.20.51.png",
+    "box": [
+      1254,
+      429,
+      1613,
+      537
+    ]
+  },
+  {
+    "id": 54,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.20.59_2.png",
+    "box": [
+      1338,
+      588,
+      1697,
+      696
+    ]
+  },
+  {
+    "id": 55,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.21.02_2.png",
+    "box": [
+      1122,
+      630,
+      1556,
+      738
+    ]
+  },
+  {
+    "id": 56,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.21.05.png",
+    "box": [
+      1272,
+      636,
+      1745,
+      744
+    ]
+  },
+  {
+    "id": 57,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.21.10.png",
+    "box": [
+      1341,
+      738,
+      1700,
+      846
+    ]
+  },
+  {
+    "id": 58,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.21.21_2.png",
+    "box": [
+      1152,
+      528,
+      1586,
+      636
+    ]
+  },
+  {
+    "id": 59,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.21.25_2.png",
+    "box": [
+      1278,
+      576,
+      1712,
+      684
+    ]
+  },
+  {
+    "id": 60,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.21.28_2.png",
+    "box": [
+      1164,
+      576,
+      1553,
+      684
+    ]
+  },
+  {
+    "id": 61,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.21.50_2.png",
+    "box": [
+      1227,
+      531,
+      1745,
+      639
+    ]
+  },
+  {
+    "id": 62,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.22.00.png",
+    "box": [
+      1053,
+      630,
+      1562,
+      738
+    ]
+  },
+  {
+    "id": 63,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.22.25.png",
+    "box": [
+      1179,
+      540,
+      1601,
+      648
+    ]
+  },
+  {
+    "id": 64,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.22.25.png",
+    "box": [
+      1179,
+      540,
+      1601,
+      648
+    ]
+  },
+  {
+    "id": 65,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.22.38.png",
+    "box": [
+      1272,
+      681,
+      1700,
+      789
+    ]
+  },
+  {
+    "id": 66,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.24.10.png",
+    "box": [
+      1008,
+      423,
+      1415,
+      531
+    ]
+  },
+  {
+    "id": 67,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.24.47.png",
+    "box": [
+      1185,
+      579,
+      1625,
+      687
+    ]
+  },
+  {
+    "id": 68,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.24.51.png",
+    "box": [
+      1119,
+      633,
+      1553,
+      741
+    ]
+  },
+  {
+    "id": 69,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.24.51.png",
+    "box": [
+      1119,
+      633,
+      1553,
+      741
+    ]
+  },
+  {
+    "id": 70,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.25.16.png",
+    "box": [
+      1161,
+      690,
+      1601,
+      798
+    ]
+  },
+  {
+    "id": 71,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.25.28.png",
+    "box": [
+      1089,
+      444,
+      1475,
+      552
+    ]
+  },
+  {
+    "id": 72,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.28.45.png",
+    "box": [
+      1185,
+      423,
+      1544,
+      531
+    ]
+  },
+  {
+    "id": 73,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.28.54.png",
+    "box": [
+      1218,
+      528,
+      1634,
+      636
+    ]
+  },
+  {
+    "id": 74,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.28.55.png",
+    "box": [
+      1074,
+      576,
+      1484,
+      684
+    ]
+  },
+  {
+    "id": 75,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.28.55.png",
+    "box": [
+      1074,
+      576,
+      1484,
+      684
+    ]
+  },
+  {
+    "id": 76,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.29.02_2.png",
+    "box": [
+      1311,
+      678,
+      1751,
+      786
+    ]
+  },
+  {
+    "id": 77,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.29.03.png",
+    "box": [
+      1353,
+      687,
+      1712,
+      795
+    ]
+  },
+  {
+    "id": 78,
+    "kind": "safety",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.29.08_2.png",
+    "box": [
+      1230,
+      729,
+      1589,
+      837
+    ]
+  },
+  {
+    "id": 79,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.29.38.png",
+    "box": [
+      1104,
+      732,
+      1622,
+      840
+    ]
+  },
+  {
+    "id": 80,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.32.54.png",
+    "box": [
+      1338,
+      597,
+      1697,
+      705
+    ]
+  },
+  {
+    "id": 81,
+    "kind": "focus",
+    "file": "C:\\Users\\User\\OneDrive\\Документы\\Alchemy\\screenshots\\2026-09-20_00.33.23.png",
+    "box": [
+      1206,
+      534,
+      1613,
+      642
+    ]
+  }
+]

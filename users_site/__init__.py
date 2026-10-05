@@ -1,0 +1,1 @@
+"""User pages Django application."""
