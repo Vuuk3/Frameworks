@@ -88,6 +88,48 @@ class TestDjangoViews(SimpleTestCase):
             with self.subTest(path=path):
                 self.assertIsNotNone(finders.find(path))
 
+    def test_all_detail_pages_open(self):
+        urls = (
+            reverse("mentors:detail", args=[1]),
+            reverse("specializations:detail", args=[1]),
+            reverse("applications:detail", args=[1]),
+            reverse("users:detail", args=[1]),
+        )
+        for url in urls:
+            with self.subTest(url=url):
+                self.assertEqual(self.client.get(url).status_code, 200)
+
+    def test_application_status_condition(self):
+        open_response = self.client.get(
+            reverse("applications:detail", args=[1])
+        )
+        accepted_response = self.client.get(
+            reverse("applications:detail", args=[3])
+        )
+
+        self.assertContains(open_response, "Открыта")
+        self.assertContains(accepted_response, "Принята")
+
+    def test_navigation_contains_named_routes(self):
+        response = self.client.get(reverse("homepage:index"))
+
+        for url_name in (
+            "homepage:index",
+            "mentors:list",
+            "specializations:list",
+            "applications:list",
+            "users:list",
+        ):
+            with self.subTest(url_name=url_name):
+                self.assertContains(response, f'href="{reverse(url_name)}"')
+
+    def test_page_references_project_static_files(self):
+        response = self.client.get(reverse("homepage:index"))
+
+        self.assertContains(response, "/static/homepage/css/style.css")
+        self.assertContains(response, "/static/homepage/js/main.js")
+        self.assertContains(response, "/static/homepage/images/logo.svg")
+
     def test_unknown_object_returns_404(self):
         response = self.client.get("/applications/999/")
 

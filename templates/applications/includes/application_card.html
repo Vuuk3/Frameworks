@@ -2,6 +2,6 @@
     <h2>Заявка №{{ application.id }}</h2>
     <p>{{ application.user_name }}</p>
     <p class="muted">{{ application.specialization_name }}</p>
-    {% include "applications/includes/application_status.html" %}
+    <p>{% include "applications/includes/application_status.html" %}</p>
     <a href="{% url 'applications:detail' application.id %}">Подробнее</a>
 </article>
