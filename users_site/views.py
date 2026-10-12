@@ -1,8 +1,8 @@
 from django.http import Http404
+from django.shortcuts import render
 
 from app.models import User
 from app.storage import load_objects
-from web_common import cards, page
 
 
 def _users() -> list[User]:
@@ -11,16 +11,11 @@ def _users() -> list[User]:
 
 def user_list(request):
     """Show users without exposing their stored passwords."""
-    blocks = [
-        '<article class="card">'
-        f"<h2>{item.name}</h2>"
-        f'<p class="muted">{item.email}</p>'
-        f'<a href="{item.id}/">Подробнее</a>'
-        "</article>"
-        for item in _users()
-    ]
-    content = "<h1>Пользователи</h1>" + cards(blocks)
-    return page("Пользователи", content)
+    return render(
+        request,
+        "users/user_list.html",
+        {"users": _users()},
+    )
 
 
 def user_detail(request, user_id: int):
@@ -31,9 +26,8 @@ def user_detail(request, user_id: int):
     )
     if user is None:
         raise Http404("Пользователь не найден")
-    content = (
-        f"<h1>{user.name}</h1>"
-        f"<p><strong>Email:</strong> {user.email}</p>"
-        '<p><a href="/users/">Назад к списку</a></p>'
+    return render(
+        request,
+        "users/user_detail.html",
+        {"user": user},
     )
-    return page(user.name, content)

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Заявка №{{ application.id }}{% endblock %}
+
+{% block content %}
+<h1>Заявка №{{ application.id }}</h1>
+<dl class="details">
+    <dt>Пользователь</dt>
+    <dd>{{ user.name|default:"Пользователь не найден" }}</dd>
+    <dt>Специализация</dt>
+    <dd>{{ specialization_name }}</dd>
+    <dt>Статус</dt>
+    <dd>{% include "applications/includes/application_status.html" %}</dd>
+    <dt>Наставник</dt>
+    <dd>{{ mentor.name|default:"Не назначен" }}</dd>
+</dl>
+<a href="{% url 'applications:list' %}">Назад к списку</a>
+{% endblock %}

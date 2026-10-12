@@ -1,8 +1,8 @@
 from django.http import Http404
+from django.shortcuts import render
 
 from app.models import Application, Mentor, Specialization, User
 from app.storage import load_objects
-from web_common import cards, page
 
 
 def _applications() -> list[Application]:
@@ -31,33 +31,26 @@ def _related_data():
 def application_list(request):
     """Show applications with names resolved from related objects."""
     users, mentors, specializations = _related_data()
-    blocks = []
+    applications = []
     for item in _applications():
         user = users.get(item.user_id)
         specialization = specializations.get(item.specialization_id)
-        user_name = (
+        item.user_name = (
             user.name
             if user
             else f"Пользователь №{item.user_id}"
         )
-        specialization_name = (
+        item.specialization_name = (
             specialization.name
             if specialization
             else f"Специализация №{item.specialization_id}"
         )
-        blocks.append(
-            '<article class="card">'
-            f"<h2>Заявка №{item.id}</h2>"
-            f"<p>{user_name}</p>"
-            "<p class=\"muted\">"
-            f"{specialization_name}"
-            "</p>"
-            f'<p class="status">{item.status}</p>'
-            f'<a href="{item.id}/">Подробнее</a>'
-            "</article>"
-        )
-    content = "<h1>Заявки</h1>" + cards(blocks)
-    return page("Заявки", content)
+        applications.append(item)
+    return render(
+        request,
+        "applications/application_list.html",
+        {"applications": applications},
+    )
 
 
 def application_detail(request, application_id: int):
@@ -82,15 +75,13 @@ def application_detail(request, application_id: int):
         if specialization
         else f"№{application.specialization_id}"
     )
-    content = (
-        f"<h1>Заявка №{application.id}</h1>"
-        "<p><strong>Пользователь:</strong> "
-        f"{user.name if user else '№' + str(application.user_id)}</p>"
-        "<p><strong>Специализация:</strong> "
-        f"{specialization_name}</p>"
-        f"<p><strong>Статус:</strong> {application.status}</p>"
-        "<p><strong>Наставник:</strong> "
-        f"{mentor.name if mentor else 'Не назначен'}</p>"
-        '<p><a href="/applications/">Назад к списку</a></p>'
+    return render(
+        request,
+        "applications/application_detail.html",
+        {
+            "application": application,
+            "user": user,
+            "mentor": mentor,
+            "specialization_name": specialization_name,
+        },
     )
-    return page(f"Заявка №{application.id}", content)

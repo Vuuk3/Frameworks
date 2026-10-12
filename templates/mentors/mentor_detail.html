@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}{{ mentor.name }}{% endblock %}
+
+{% block content %}
+<h1>{{ mentor.name }}</h1>
+<dl class="details">
+    <dt>Email</dt>
+    <dd>{{ mentor.email }}</dd>
+    <dt>Специализации</dt>
+    <dd>{{ specialization_names|join:", "|default:"Не указаны" }}</dd>
+</dl>
+<a href="{% url 'mentors:list' %}">Назад к списку</a>
+{% endblock %}

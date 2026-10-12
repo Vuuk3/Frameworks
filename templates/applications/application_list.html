@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Заявки{% endblock %}
+
+{% block content %}
+<h1>Заявки</h1>
+<p class="muted">Найдено: {{ applications|length }}</p>
+<div class="card-grid">
+    {% for application in applications %}
+        {% include "applications/includes/application_card.html" %}
+    {% empty %}
+        <p>Заявок пока нет.</p>
+    {% endfor %}
+</div>
+{% endblock %}

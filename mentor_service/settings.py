@@ -23,7 +23,18 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "mentor_service.urls"
 
-TEMPLATES = []
+TEMPLATES = [
+    {
+        "BACKEND": "django.template.backends.django.DjangoTemplates",
+        "DIRS": [BASE_DIR / "templates"],
+        "APP_DIRS": True,
+        "OPTIONS": {
+            "context_processors": [
+                "django.template.context_processors.request",
+            ],
+        },
+    },
+]
 
 WSGI_APPLICATION = "mentor_service.wsgi.application"
 ASGI_APPLICATION = "mentor_service.asgi.application"

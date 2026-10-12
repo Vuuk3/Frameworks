@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Наставники{% endblock %}
+
+{% block content %}
+<h1>Наставники</h1>
+<p class="muted">Найдено: {{ mentors|length }}</p>
+<div class="card-grid">
+    {% for mentor in mentors %}
+        {% include "mentors/includes/mentor_card.html" %}
+    {% empty %}
+        <p>Наставники пока не добавлены.</p>
+    {% endfor %}
+</div>
+{% endblock %}

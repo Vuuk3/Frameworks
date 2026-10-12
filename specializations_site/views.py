@@ -1,8 +1,8 @@
 from django.http import Http404
+from django.shortcuts import render
 
 from app.models import Specialization
 from app.storage import load_objects
-from web_common import cards, page
 
 
 def _specializations() -> list[Specialization]:
@@ -11,16 +11,11 @@ def _specializations() -> list[Specialization]:
 
 def specialization_list(request):
     """Show all available learning directions."""
-    blocks = [
-        '<article class="card">'
-        f"<h2>{item.name}</h2>"
-        f'<p class="muted">{item.description}</p>'
-        f'<a href="{item.id}/">Подробнее</a>'
-        "</article>"
-        for item in _specializations()
-    ]
-    content = "<h1>Специализации</h1>" + cards(blocks)
-    return page("Специализации", content)
+    return render(
+        request,
+        "specializations/specialization_list.html",
+        {"specializations": _specializations()},
+    )
 
 
 def specialization_detail(request, specialization_id: int):
@@ -35,9 +30,8 @@ def specialization_detail(request, specialization_id: int):
     )
     if item is None:
         raise Http404("Специализация не найдена")
-    content = (
-        f"<h1>{item.name}</h1>"
-        f"<p>{item.description or 'Описание пока не добавлено.'}</p>"
-        '<p><a href="/specializations/">Назад к списку</a></p>'
+    return render(
+        request,
+        "specializations/specialization_detail.html",
+        {"specialization": item},
     )
-    return page(item.name, content)

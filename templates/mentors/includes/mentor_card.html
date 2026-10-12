@@ -1,0 +1,11 @@
+<article class="content-card">
+    <h2>{{ mentor.name }}</h2>
+    {% if mentor.specialization_names %}
+        <p class="muted">
+            {{ mentor.specialization_names|join:", " }}
+        </p>
+    {% else %}
+        <p class="muted">Специализации не указаны</p>
+    {% endif %}
+    <a href="{% url 'mentors:detail' mentor.id %}">Подробнее</a>
+</article>

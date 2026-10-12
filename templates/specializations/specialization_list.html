@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Специализации{% endblock %}
+
+{% block content %}
+<h1>Специализации</h1>
+<p class="muted">Найдено: {{ specializations|length }}</p>
+<div class="card-grid">
+    {% for specialization in specializations %}
+        <article class="content-card">
+            <h2>{{ specialization.name }}</h2>
+            <p class="muted">
+                {{ specialization.description|default:"Описание не добавлено" }}
+            </p>
+            <a href="{% url 'specializations:detail' specialization.id %}">
+                Подробнее
+            </a>
+        </article>
+    {% empty %}
+        <p>Специализации пока не добавлены.</p>
+    {% endfor %}
+</div>
+{% endblock %}

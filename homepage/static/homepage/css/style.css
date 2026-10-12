@@ -1,0 +1,145 @@
+:root {
+    color-scheme: light;
+    --accent: #176b55;
+    --accent-dark: #103f35;
+    --background: #f3f4f6;
+    --border: #d1d5db;
+    --muted: #6b7280;
+}
+
+body {
+    margin: 0;
+    color: #1f2937;
+    background: var(--background);
+    font-family: Arial, sans-serif;
+}
+
+.site-nav {
+    background: var(--accent-dark);
+}
+
+.nav-inner,
+.brand,
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-inner {
+    min-height: 68px;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.brand,
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.brand {
+    gap: 10px;
+    font-weight: 700;
+}
+
+.nav-links {
+    gap: 20px;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    text-decoration: underline;
+}
+
+.nav-toggle {
+    display: none;
+    padding: 6px 12px;
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+.page-content {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 28px;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+.page-content h1 {
+    margin-top: 0;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.content-card {
+    padding: 18px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+.content-card h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+a {
+    color: var(--accent);
+}
+
+.muted {
+    color: var(--muted);
+}
+
+.status {
+    display: inline-block;
+    padding: 3px 9px;
+    font-weight: 700;
+    border-radius: 999px;
+}
+
+.status-open {
+    color: #744210;
+    background: #fef3c7;
+}
+
+.status-accepted {
+    color: #14532d;
+    background: #dcfce7;
+}
+
+.details dt {
+    font-weight: 700;
+}
+
+.details dd {
+    margin-bottom: 14px;
+}
+
+@media (max-width: 760px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 16px;
+    }
+
+    .nav-links.is-open {
+        display: flex;
+    }
+
+    .nav-inner {
+        flex-wrap: wrap;
+    }
+}

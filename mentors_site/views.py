@@ -1,8 +1,8 @@
 from django.http import Http404
+from django.shortcuts import render
 
 from app.models import Mentor, Specialization
 from app.storage import load_objects
-from web_common import cards, page
 
 
 def _mentors() -> list[Mentor]:
@@ -17,21 +17,18 @@ def _specialization_names() -> dict[int, str]:
 def mentor_list(request):
     """Show all mentors stored by the console application."""
     names = _specialization_names()
-    blocks = []
+    mentors = []
     for mentor in _mentors():
-        labels = [
+        mentor.specialization_names = [
             names.get(item, f"№{item}")
             for item in mentor.specializations
         ]
-        blocks.append(
-            '<article class="card">'
-            f"<h2>{mentor.name}</h2>"
-            f'<p class="muted">{", ".join(labels) or "Не указаны"}</p>'
-            f'<a href="{mentor.id}/">Подробнее</a>'
-            "</article>"
-        )
-    content = "<h1>Наставники</h1>" + cards(blocks)
-    return page("Наставники", content)
+        mentors.append(mentor)
+    return render(
+        request,
+        "mentors/mentor_list.html",
+        {"mentors": mentors},
+    )
 
 
 def mentor_detail(request, mentor_id: int):
@@ -44,15 +41,15 @@ def mentor_detail(request, mentor_id: int):
         raise Http404("Наставник не найден")
 
     names = _specialization_names()
-    labels = [
+    specialization_names = [
         names.get(item, f"№{item}")
         for item in mentor.specializations
     ]
-    content = (
-        f"<h1>{mentor.name}</h1>"
-        f"<p><strong>Email:</strong> {mentor.email}</p>"
-        "<p><strong>Специализации:</strong> "
-        f"{', '.join(labels) or 'Не указаны'}</p>"
-        '<p><a href="/mentors/">Назад к списку</a></p>'
+    return render(
+        request,
+        "mentors/mentor_detail.html",
+        {
+            "mentor": mentor,
+            "specialization_names": specialization_names,
+        },
     )
-    return page(mentor.name, content)

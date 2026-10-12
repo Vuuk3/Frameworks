@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}{{ specialization.name }}{% endblock %}
+
+{% block content %}
+<h1>{{ specialization.name }}</h1>
+<p>{{ specialization.description|default:"Описание пока не добавлено." }}</p>
+<a href="{% url 'specializations:list' %}">Назад к списку</a>
+{% endblock %}

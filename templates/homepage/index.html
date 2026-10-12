@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+<h1>Сервис поиска наставников</h1>
+<p>Просматривайте наставников, направления обучения и заявки пользователей.</p>
+<p class="muted">Всего разделов: {{ sections|length }}</p>
+<div class="card-grid">
+    {% for section in sections %}
+        <article class="content-card">
+            <h2>{{ section.label }}</h2>
+            <p class="muted">Записей: {{ section.count }}</p>
+            <a href="{% url section.url_name %}">Открыть раздел</a>
+        </article>
+    {% empty %}
+        <p>Разделы пока не настроены.</p>
+    {% endfor %}
+</div>
+{% endblock %}
