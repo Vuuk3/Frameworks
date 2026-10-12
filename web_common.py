@@ -13,10 +13,14 @@ NAVIGATION = (
 )
 
 
-def page(title: str, content: str) -> HttpResponse:
+def page(
+    title: str,
+    content: str,
+    status: int = 200,
+) -> HttpResponse:
     """Build a small HTML page with common navigation and CSS."""
     links = "".join(
-        f'<a href="{url}">{escape(label)}</a>'
+        f'<a class="nav-link" href="{url}">{escape(label)}</a>'
         for url, label in NAVIGATION
     )
     document = f"""<!doctype html>
@@ -25,6 +29,10 @@ def page(title: str, content: str) -> HttpResponse:
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{escape(title)}</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
     <style>
         body {{
             font-family: Arial, sans-serif;
@@ -66,11 +74,11 @@ def page(title: str, content: str) -> HttpResponse:
     </style>
 </head>
 <body>
-    <nav>{links}</nav>
-    <main>{content}</main>
+    <nav class="nav">{links}</nav>
+    <main class="container shadow-sm">{content}</main>
 </body>
 </html>"""
-    return HttpResponse(document)
+    return HttpResponse(document, status=status)
 
 
 def cards(items: Iterable[str]) -> str:

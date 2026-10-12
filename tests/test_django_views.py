@@ -8,6 +8,7 @@ os.environ.setdefault(
 
 import django  # noqa: E402
 from django.test import Client, SimpleTestCase  # noqa: E402
+from django.test import override_settings  # noqa: E402
 
 
 django.setup()
@@ -24,6 +25,7 @@ class TestDjangoViews(SimpleTestCase):
 
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "Сервис поиска наставников")
+        self.assertContains(response, "bootstrap@5.3.3")
 
     def test_object_lists_open(self):
         for url in (
@@ -45,3 +47,14 @@ class TestDjangoViews(SimpleTestCase):
         response = self.client.get("/applications/999/")
 
         self.assertEqual(response.status_code, 404)
+
+    @override_settings(DEBUG=False)
+    def test_custom_404_page(self):
+        response = self.client.get("/missing-page/")
+
+        self.assertEqual(response.status_code, 404)
+        self.assertContains(
+            response,
+            "Страница не найдена",
+            status_code=404,
+        )

@@ -39,3 +39,13 @@ def index(request):
         + cards(blocks)
     )
     return page("Сервис поиска наставников", content)
+
+
+def page_not_found(request, exception):
+    """Return the project-specific page for missing routes and objects."""
+    content = (
+        "<h1>Страница не найдена</h1>"
+        "<p>Запрошенная страница или объект отсутствует.</p>"
+        '<p><a class="btn btn-primary" href="/">На главную</a></p>'
+    )
+    return page("Ошибка 404", content, status=404)

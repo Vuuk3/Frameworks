@@ -11,3 +11,5 @@ urlpatterns = [
     ),
     path("users/", include("users_site.urls")),
 ]
+
+handler404 = "homepage.views.page_not_found"
